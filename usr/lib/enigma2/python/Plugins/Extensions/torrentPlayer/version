@@ -1,0 +1,4 @@
+version:2.0
+kernel:oe2.0
+package:full
+build:f020920201

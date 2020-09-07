@@ -1,0 +1,20 @@
+##params##
+plugin_title==YTS YIFY
+plugin_id==ytslt
+section==movies
+subsection==general
+group==movies
+rating==5
+version==1.0.8
+provider==TSmedia Team Support yassinov.com
+textsize==20
+textcolor==#00ffe875
+infobar_forecolor==#000080
+infobar_color==#7eb682
+baseurl== https://yts.lt/ 
+style==thumbnails
+fanart==True
+mediatype==torrents
+addontype=torrents
+downloadimage_by==thread
+autonext==False

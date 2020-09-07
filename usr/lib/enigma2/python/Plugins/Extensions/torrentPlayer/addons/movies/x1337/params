@@ -1,0 +1,21 @@
+﻿##params##
+plugin_title==1337x
+plugin_id==x1337
+section==movies
+version==1.0.6
+provider==TSmedia Team
+subsection==general
+group==movies
+rating==4
+textsize==20
+textcolor==#00ffe875
+infobar_forecolor+==#00ffe875
+infobar_color==#042f66
+style==list
+fanart==False
+mediatype==torrents
+downloadimage_by==thread
+autonext==False
+metadata==False
+subtitle==False
+player==auto

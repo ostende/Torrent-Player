@@ -1,0 +1,21 @@
+﻿##params##
+plugin_title==Zooqle
+plugin_id==zooqle
+section==movies
+version==1.0.1
+provider==TSmedia Team
+subsection==general
+group==movies
+rating==4
+textsize==20
+textcolor==#00ffe875
+infobar_forecolor+==#76addc
+infobar_color==#48470F
+style==list
+fanart==True
+mediatype==torrent
+downloadimage_by==thread
+autonext==False
+metadata==False
+subtitle==False
+player==auto

@@ -1,0 +1,3156 @@
+<skin>
+    <!--117 Movieplayer infobar -->
+<screen name = "torrentPlayerPackageInstallerScreen" position="center,center" size="900,960" title="Select Package(s)" backgroundColor = "#080000" >
+  			
+  			
+
+  	<widget name="config" foregroundColor="#00ffffff" backgroundColor="#16000000" position="10,20" size="800,720" scrollbarMode="showOnDemand"/>
+
+
+  			
+ 	<widget name="key_green" position="350,820" size="250,49" valign="center" halign="center" zPosition="4" foregroundColor="#00ffffff" backgroundColor="#35FB3B" font="Regular;32" transparent="0"/>
+  			
+
+ 	<widget name="status" foregroundColor="#00ffffff" backgroundColor="#16000000" position="15,750" size="1174,54" font="Regular;35"/>
+		
+</screen>
+
+   <screen
+        name = "imdbupdatesScreen"
+        position = "center,center"
+        size = "1480,920"
+        title = "Movie info"
+        backgroundColor = "transparent"
+        flags = "wfNoBorder">
+
+
+            
+        <widget
+            name = "poster"
+            position = "925,39"
+            size = "488,795"
+            transparent = "1"
+            alphatest = "blend"
+            zPosition = "3"/>
+        <widget
+            name = "flag"
+            position = "800,45"
+            size = "67,67"
+            transparent = "0"
+            alphatest = "blend"
+            zPosition = "5"/>
+
+            
+        <widget
+            name = "info"
+            position = "30,15"
+            size = "900,865"
+            font = "torrentPlayerFont;38"
+            foregroundColor = "white"
+            backgroundColor = "#80000000"
+            transparent = "1"
+            zPosition = "3"/>
+        <ePixmap
+            position = "center,center"
+            size = "1480,920"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/ImdbInfosfhd.png"
+            zPosition = "-1"
+            transparent = "1"
+            alphatest = "blend"/>
+
+        <widget
+            name = "key_green"
+            position = "190,880"
+            zPosition = "4"
+            size = "200,40"
+            halign = "center"
+            font = "torrentPlayerFont;27"
+            transparent = "1"
+            text="Search"
+            foregroundColor = "#ffffff"
+            backgroundColor = "black"/>
+        <widget
+            name = "key_yellow"
+            position = "410,880"
+            zPosition = "10"
+            size = "200,40"
+            halign = "left"
+            font = "torrentPlayerFont;27"
+            transparent = "1"
+            foregroundColor = "#ffffff"
+            backgroundColor = "black"/>
+        <widget
+            name = "key_blue"
+            position = "560,880"
+            zPosition = "4"
+            size = "200,40"
+            halign = "center"
+            font = "torrentPlayerFont;27"
+            transparent = "1"
+            foregroundColor = "#ffffff"
+            backgroundColor = "black"/>
+
+
+
+
+            
+    </screen>
+
+ <screen
+    name = "torrentPlayScreen"
+    position = "center,center"
+    backgroundColor = "#080000"
+    size = "1200,1000">
+   <ePixmap position="0,0" size="1200,1000" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/bgfhd.jpg" transparent="1" zPosition="2" alphatest="on" />'
+
+   <widget name="playtorrent" position="750,330" size="140,140" pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/micons/palytorrent.png" transparent="1" zPosition="3"  backgroundColor="#000000" alphatest = "blend"/>
+
+
+
+
+    <widget
+        name = "menu"
+        position = "15,5"
+        size = "1200,750"
+        scrollbarMode = "showOnDemand"
+        backgroundColor = "#0D2F48"
+        transparent = "1"
+        zPosition = "3"
+        selectionPixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/torrentselfhd.png"
+        scrollbarSliderForegroundColor = "#00ffffff"
+        scrollbarSliderBorderColor = "#10273b44"
+        scrollbarSliderPicture = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/bar_01.png"/>
+
+        <eLabel
+            text = "Remove"
+            position = "15,615"
+            size = "225,54"
+            font = "torrentPlayerFont;32"
+            foregroundColor = "#000000"
+            zPosition = "10"
+            valign = "center"
+            halign = "center"               
+            backgroundColor = "red"/>
+        <eLabel
+            text = "IMDB"
+            position = "240,615"
+            size = "225,54"
+            font = "torrentPlayerFont;32"
+            foregroundColor = "#000000"
+            zPosition = "10"
+            valign = "center"
+            halign = "center"               
+            backgroundColor = "green"/>
+
+
+
+
+            
+        <eLabel
+            text = "Files"
+            position = "465,615"
+            size = "225,54"
+            font = "torrentPlayerFont;32"
+            foregroundColor = "#000000"
+            zPosition = "10"
+            valign = "center"
+            halign = "center"            
+            backgroundColor = "#F4CE23"/>
+        <eLabel
+            text = "ShowHide"
+            position = "690,615"
+            size = "225,54"
+            font = "torrentPlayerFont;32"
+            foregroundColor = "#000000"
+            zPosition = "10"
+            valign = "center"
+            halign = "center"            
+            backgroundColor = "#259cc4"/>
+
+
+    <widget
+        name = "info"
+        position = "140,900"
+        size = "920,100"
+        backgroundColor = "#000000"
+        transparent = "3"
+        foregroundColor = "#ffffff"
+        font = "torrentPlayerFont;30"
+        valign = "top"
+        halign = "center"
+        zPosition = "10"/>
+
+    <widget
+        name = "handlung"
+        position = "140,780"
+        size = "920,100"
+        backgroundColor = "#000000"
+        transparent = "3"
+        foregroundColor = "#ffffff"
+        font = "torrentPlayerFont;30"
+        valign = "top"
+        halign = "center"
+        zPosition = "10"/>
+</screen>
+      
+    
+    
+    
+    <screen
+        name = "TSMplayer"
+        position = "0,860"
+        size = "1920,220"
+        title = "InfoBar"
+        backgroundColor = "#54111112"
+        transparent = "0"
+        flags = "wfNoBorder">
+        <widget
+            position = "1800,170"
+            halign = "center"
+            size = "96,42"
+            foregroundColor = "#ffffff"
+            zPosition = "2"
+            name = "channel_number"
+            transparent = "0"
+            font = "torrentPlayerFont;48"/>
+        <widget
+            position = "360,185"
+            size = "1200,75"
+            zPosition = "2"
+            font = "Regular;30"
+            halign = "center"
+            noWrap = "1"
+            foregroundColor = "white"
+            transparent = "1"
+            backgroundColor = "background"
+            name = "programm"/>
+        <widget
+            name = "plugin_icon"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/movies.png"
+            position = "1665,132"
+            size = "65,65"
+            transparent = "1"
+            alphatest = "blend"
+            borderWidth = "2"
+            borderColor = "#00555556"/>
+        <widget
+            name = "player"
+            font = "Regular;30"
+            position = "1400,175"
+            size = "300,80"            
+            foregroundColor = "white"
+            backgroundColor = "transpBlack"
+            transparent = "1"/>
+
+        <ePixmap
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/TSMplayer/red.png"
+            position = "45,185"
+            size = "45,39"
+            zPosition = "1"
+            alphatest = "blend"/>
+        <widget
+            source = "global.CurrentTime"
+            render = "Label"
+            position = "1539,29"
+            size = "210,51"
+            zPosition = "2"
+            font = "LCD;48"
+            valign = "top"
+            halign = "right"
+            foregroundColor = "white"
+            backgroundColor = "transpBlack"
+            transparent = "1">
+            <convert type = "ClockToText">Default</convert>
+        </widget>
+        <widget
+            source = "global.CurrentTime"
+            render = "Label"
+            position = "1684,32"
+            size = "105,33"
+            zPosition = "2"
+            font = "LCD;30"
+            valign = "top"
+            halign = "right"
+            foregroundColor = "white"
+            backgroundColor = "transpBlack"
+            transparent = "1">
+            <convert type = "ClockToText">Format::%S</convert>
+        </widget>
+        <widget
+            source = "global.CurrentTime"
+            render = "Label"
+            position = "150,32"
+            size = "165,36"
+            font = "Regular;33"
+            halign = "left"
+            foregroundColor = "white"
+            backgroundColor = "transpBlack"
+            transparent = "1">
+            <convert type = "ClockToText">Format:%d.%m.%Y</convert>
+        </widget>
+        <widget
+            source = "session.CurrentService"
+            render = "Label"
+            position = "360,27"
+            size = "1200,45"
+            zPosition = "2"
+            font = "Regular;39"
+            halign = "center"
+            noWrap = "1"
+            foregroundColor = "white"
+            transparent = "1"
+            backgroundColor = "background">
+            <convert type = "ServiceName">Name</convert>
+        </widget>
+        <ePixmap
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/TSMplayer/ico_dolby_off.png"
+            position = "112,140"
+            size = "66,39"
+            zPosition = "1"
+            alphatest = "blend"/>
+        <widget
+            source = "session.CurrentService"
+            render = "Pixmap"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/TSMplayer/ico_dolby_on.png"
+            position = "112,140"
+            size = "66,39"
+            zPosition = "2"
+            alphatest = "blend">
+            <convert type = "ServiceInfo">IsMultichannel</convert>
+            <convert type = "ConditionalShowHide"/>
+        </widget>
+        <ePixmap
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/TSMplayer/ico_format_off.png"
+            position = "184,140"
+            size = "66,39"
+            zPosition = "1"
+            alphatest = "blend"/>
+        <widget
+            source = "session.CurrentService"
+            render = "Pixmap"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/TSMplayer/ico_format_on.png"
+            position = "184,140"
+            size = "66,39"
+            zPosition = "2"
+            alphatest = "blend">
+            <convert type = "ServiceInfo">IsWidescreen</convert>
+            <convert type = "ConditionalShowHide"/>
+        </widget>
+        <ePixmap
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/TSMplayer/ico_rec_off.png"
+            position = "256,140"
+            size = "66,39"
+            zPosition = "1"
+            alphatest = "blend"/>
+        <widget
+            source = "session.RecordState"
+            render = "Pixmap"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/TSMplayer/ico_rec_on.png"
+            position = "256,140"
+            size = "66,39"
+            zPosition = "2"
+            alphatest = "blend">
+            <convert type = "ConditionalShowHide">Blink</convert>
+        </widget>
+        <widget
+            source = "session.CurrentService"
+            render = "Label"
+            font = "Regular;30"
+            position = "1624,86"
+            size = "82,36"
+            halign = "right"
+            foregroundColor = "white"
+            backgroundColor = "transpBlack"
+            transparent = "1">
+            <convert type = "ServiceInfo">VideoWidth</convert>
+        </widget>
+        <eLabel
+            text = "x"
+            font = "Regular;30"
+            position = "1707,86"
+            size = "22,36"
+            halign = "center"
+            foregroundColor = "white"
+            backgroundColor = "transpBlack"
+            transparent = "1"/>
+        <widget
+            source = "session.CurrentService"
+            render = "Label"
+            font = "Regular;30"
+            position = "1729, 86"
+            size = "82,36"
+            halign = "left"
+            foregroundColor = "white"
+            backgroundColor = "transpBlack"
+            transparent = "1">
+            <convert type = "ServiceInfo">VideoHeight</convert>
+        </widget>
+        <widget
+            source = "session.CurrentService"
+            render = "Label"
+            position = "366, 86"
+            size = "150,39"
+            font = "Regular;33"
+            halign = "right"
+            foregroundColor = "white"
+            backgroundColor = "transpBlack"
+            transparent = "1">
+            <convert type = "ServicePosition">Position</convert>
+        </widget>
+        <ePixmap
+            position = "540, 93"
+            size = "900,33"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/TSMplayer/mpsliderfhd.png"
+            zPosition = "3"
+            alphatest = "blend"/>
+        <widget
+            source = "session.CurrentService"
+            render = "PositionGauge"
+            position = "577, 99"
+            size = "828,21"
+            zPosition = "2"
+            pointer = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/TSMplayer/pointer.png:13,3">
+            <convert type = "ServicePosition">Gauge</convert>
+        </widget>
+        <widget
+            source = "session.CurrentService"
+            render = "Label"
+            position = "1470, 86"
+            size = "150,39"
+            font = "Regular;33"
+            halign = "left"
+            foregroundColor = "white"
+            backgroundColor = "transpBlack"
+            transparent = "1">
+            <convert type = "ServicePosition">Remaining</convert>
+        </widget>
+        <widget
+            source = "session.CurrentService"
+            render = "Label"
+            position = "900,140"
+            size = "180,37"
+            font = "Regular;36"
+            halign = "center"
+            foregroundColor = "white"
+            backgroundColor = "transpBlack"
+            transparent = "1">
+            <convert type = "ServicePosition">Length</convert>
+        </widget>
+        <ePixmap
+            position = "93,86"
+            zPosition = "1"
+            size = "252,51"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/TSMplayer/mp_buttons.png"
+            alphatest = "on"
+            transparent = "1"/>
+    </screen>
+    <!--TSRplayer -->
+    <screen
+        name = "fullScreenSkin"
+        position = "0,0"
+        size = "1920,1080"
+        backgroundColor = "#000000"
+        flags = "wfNoBorder"
+        title = "Player">
+  
+
+        <widget
+            name = "coverFull"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/movies.jpg"
+            position = "0,0"
+            size = "1920,1080"
+            transparent = "1"
+            alphatest = "blend"
+            borderWidth = "3"
+            borderColor = "#00555556"/>
+        <eLabel
+            text ="http://pixabay.com"
+            font = "torrentPlayerFont;24"
+            position = "150,1000"
+            size = "200,60"
+            halign = "center"
+            foregroundColor = "red"
+            backgroundColor = "transpBlack"
+            transparent = "1"/>
+        <eLabel
+            position = "1650,1000"
+            halign = "center"
+            size = "250,30"
+            foregroundColor = "#ffffff"
+            backgroundColor = "green"
+            zPosition = "2"
+            text="Exit full screen"
+            transparent = "0"
+            font = "torrentPlayerFont;22"/>
+
+
+
+
+
+
+
+ </screen>            
+
+
+
+
+    <screen
+        name = "TSRplayer"
+        position = "0,0"
+        size = "1920,1080"
+        backgroundColor = "#000000"
+        flags = "wfNoBorder"
+        title = "Player">
+        <eLabel
+            position = "1690,1020"
+            halign = "center"
+            size = "150,30"
+            foregroundColor = "#ffffff"
+            backgroundColor = "green"
+            zPosition = "2"
+            text="Fullscreen"
+            transparent = "0"
+            font = "torrentPlayerFont;24"/>
+
+
+        <widget
+            position = "1740,835"
+            halign = "center"
+            size = "96,42"
+            foregroundColor = "#ffffff"
+            zPosition = "2"
+            name = "channel_number"
+            transparent = "1"
+            font = "torrentPlayerFont;48"/>
+        <widget
+            name = "cover"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/movies.jpg"
+            position = "0,0"
+            size = "1920,720"
+            transparent = "1"
+            alphatest = "blend"
+            borderWidth = "2"
+            borderColor = "#00555556"/>
+        <widget
+            name = "plugin_icon"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/spicons/movies.png"
+            position = "1740,960"
+            size = "65,65"
+            transparent = "1"
+            alphatest = "blend"
+            borderWidth = "2"
+            borderColor = "#00555556"/>
+
+        <ePixmap
+            position = "60,960"
+            size = "65,50"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/micons/menufhd.png"
+            zPosition = "3"
+            transparent = "1"
+            alphatest = "blend"/>
+
+            
+        <widget
+            position = "450,834"
+            size = "1005,195"
+            foregroundColor = "#ffffff"
+            backgroundColor = "#41000000"
+            zPosition = "2"
+            transparent = "1"
+            name = "programm"
+            halign = "center"
+            valign = "center"
+            font = "torrentPlayerFont;36"/>
+        <widget
+            source = "global.CurrentTime"
+            render = "Label"
+            position = "1539,759"
+            size = "210,51"
+            zPosition = "2"
+            font = "LCD;48"
+            valign = "top"
+            halign = "right"
+            foregroundColor = "white"
+            backgroundColor = "transpBlack"
+            transparent = "1">
+            <convert type = "ClockToText">Default</convert>
+        </widget>
+        <widget
+            source = "global.CurrentTime"
+            render = "Label"
+            position = "1684,762"
+            size = "105,33"
+            zPosition = "2"
+            font = "LCD;30"
+            valign = "top"
+            halign = "right"
+            foregroundColor = "white"
+            backgroundColor = "transpBlack"
+            transparent = "1">
+            <convert type = "ClockToText">Format::%S</convert>
+        </widget>
+        <widget
+            source = "global.CurrentTime"
+            render = "Label"
+            position = "150,762"
+            size = "165,36"
+            font = "torrentPlayerFont;33"
+            halign = "left"
+            foregroundColor = "white"
+            backgroundColor = "transpBlack"
+            transparent = "1">
+            <convert type = "ClockToText">Format:%d.%m.%Y</convert>
+        </widget>
+        <widget
+            source = "session.CurrentService"
+            render = "Label"
+            position = "360,727"
+            size = "1200,45"
+            zPosition = "2"
+            font = "torrentPlayerFont;39"
+            halign = "center"
+            noWrap = "1"
+            foregroundColor = "white"
+            transparent = "1"
+            backgroundColor = "background">
+            <convert type = "ServiceName">Name</convert>
+        </widget>
+        <ePixmap
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/TSMplayer/ico_dolby_off.png"
+            position = "112,840"
+            size = "66,39"
+            zPosition = "1"
+            alphatest = "blend"/>
+        <widget
+            source = "session.CurrentService"
+            render = "Pixmap"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/TSMplayer/ico_dolby_on.png"
+            position = "112,840"
+            size = "66,39"
+            zPosition = "2"
+            alphatest = "blend">
+            <convert type = "ServiceInfo">IsMultichannel</convert>
+            <convert type = "ConditionalShowHide"/>
+        </widget>
+        <ePixmap
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/TSMplayer/ico_format_off.png"
+            position = "184,840"
+            size = "66,39"
+            zPosition = "1"
+            alphatest = "blend"/>
+        <widget
+            source = "session.CurrentService"
+            render = "Pixmap"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/TSMplayer/ico_format_on.png"
+            position = "184,840"
+            size = "66,39"
+            zPosition = "2"
+            alphatest = "blend">
+            <convert type = "ServiceInfo">IsWidescreen</convert>
+            <convert type = "ConditionalShowHide"/>
+        </widget>
+        <ePixmap
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/TSMplayer/ico_rec_off.png"
+            position = "256,840"
+            size = "66,39"
+            zPosition = "1"
+            alphatest = "blend"/>
+        <widget
+            source = "session.RecordState"
+            render = "Pixmap"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/TSMplayer/ico_rec_on.png"
+            position = "256,840"
+            size = "66,39"
+            zPosition = "2"
+            alphatest = "blend">
+            <convert type = "ConditionalShowHide">Blink</convert>
+        </widget>
+        <widget
+            source = "session.CurrentService"
+            render = "Label"
+            font = "torrentPlayerFont;30"
+            position = "1624,802"
+            size = "82,36"
+            halign = "right"
+            foregroundColor = "white"
+            backgroundColor = "transpBlack"
+            transparent = "1">
+            <convert type = "ServiceInfo">VideoWidth</convert>
+        </widget>
+        <eLabel
+            text = "x"
+            font = "torrentPlayerFont;30"
+            position = "1707,786"
+            size = "22,36"
+            halign = "center"
+            foregroundColor = "white"
+            backgroundColor = "transpBlack"
+            transparent = "1"/>
+        <widget
+            source = "session.CurrentService"
+            render = "Label"
+            font = "torrentPlayerFont;30"
+            position = "1729,802"
+            size = "82,36"
+            halign = "left"
+            foregroundColor = "white"
+            backgroundColor = "transpBlack"
+            transparent = "1">
+            <convert type = "ServiceInfo">VideoHeight</convert>
+        </widget>
+        <widget
+            source = "session.CurrentService"
+            render = "Label"
+            position = "366,786"
+            size = "150,39"
+            font = "torrentPlayerFont;33"
+            halign = "right"
+            foregroundColor = "white"
+            backgroundColor = "transpBlack"
+            transparent = "1">
+            <convert type = "ServicePosition">Position</convert>
+        </widget>
+        <ePixmap
+            position = "540,793"
+            size = "900,33"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/TSMplayer/mpsliderfhd.png"
+            zPosition = "3"
+            alphatest = "blend"/>
+        <widget
+            source = "session.CurrentService"
+            render = "PositionGauge"
+            position = "577,799"
+            size = "828,21"
+            zPosition = "2"
+            pointer = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/TSMplayer/pointer.png:13,3">
+            <convert type = "ServicePosition">Gauge</convert>
+        </widget>
+        <widget
+            source = "session.CurrentService"
+            render = "Label"
+            position = "1470,786"
+            size = "150,39"
+            font = "torrentPlayerFont;33"
+            halign = "left"
+            foregroundColor = "white"
+            backgroundColor = "transpBlack"
+            transparent = "1">
+            <convert type = "ServicePosition">Remaining</convert>
+        </widget>
+        <widget
+            source = "session.CurrentService"
+            render = "Label"
+            position = "900,840"
+            size = "180,37"
+            font = "torrentPlayerFont;36"
+            halign = "center"
+            foregroundColor = "white"
+            backgroundColor = "transpBlack"
+            transparent = "1">
+            <convert type = "ServicePosition">Length</convert>
+        </widget>
+        <ePixmap
+            position = "93,786"
+            zPosition = "1"
+            size = "252,51"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/TSMplayer/mp_buttons.png"
+            alphatest = "on"
+            transparent = "1"/>
+    </screen>
+
+ <screen
+    name = "TSPplayer"
+    position = "0,0"
+    size = "1920,1080"
+    backgroundColor = "#000000"
+    flags = "wfNoBorder"
+    title = "Player">
+    <widget
+        position = "1795,1030"
+        halign = "center"
+        size = "96,62"
+        foregroundColor = "#ffffff"
+        zPosition = "2"
+        name = "channel_number"
+        transparent = "0"
+        font = "torrentPlayerFont;48"/>
+    <widget
+        name = "cover"
+        
+        position = "center,center"
+        size = "1920,1080"
+        transparent = "1"
+        alphatest = "blend"
+        borderWidth = "2"
+        borderColor = "#00555556"/>
+    <widget
+        position = "450,990"
+        size = "1005,90"
+        foregroundColor = "#ffffff"
+        backgroundColor = "#41000000"
+        zPosition = "2"
+        transparent = "0"
+        name = "programm"
+        halign = "center"
+        valign = "center"
+        font = "torrentPlayerFont;36"/>
+    <widget
+        source = "global.CurrentTime"
+        render = "Label"
+        position = "1539,1020"
+        size = "210,51"
+        zPosition = "2"
+        font = "LCD;48"
+        valign = "top"
+        halign = "right"
+        foregroundColor = "white"
+        backgroundColor = "transpBlack"
+        transparent = "0">
+        <convert type = "ClockToText">Default</convert>
+    </widget>
+    <widget
+        source = "global.CurrentTime"
+        render = "Label"
+        position = "150,1020"
+        size = "165,36"
+        font = "torrentPlayerFont;33"
+        halign = "left"
+        foregroundColor = "white"
+        backgroundColor = "transpBlack"
+        transparent = "0">
+        <convert type = "ClockToText">Format:%d.%m.%Y</convert>
+    </widget>
+</screen>
+    <screen
+        name = "torrentPlayerfexplorer"
+        position = "0,0"
+        size = "1920,1080"
+        backgroundColor = "#080000"
+        flags = "wfNoBorder"
+        title = "Playlist">
+        <widget
+            name = "feedlist"
+            position = "60,90"
+            size = "1800,660"
+            itemHeight = "60"
+            foregroundColorSelected = "#ffffff"
+            backgroundColor = "#080000"
+            foregroundColor = "yellow"
+            backgroundColorSelected = "#41000000"
+            selectionPixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/x37ltube.png"
+            enableWrapAround = "1"
+            zPosition = "1"
+            scrollbarMode = "showOnDemand"
+            transparent = "0"/>
+        <ePixmap
+            position = "center,760"
+            size = "1280,11"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/tab_line.png"
+            zPosition = "1"
+            transparent = "1"
+            alphatest = "blend"/>
+        <ePixmap
+            position = "center,30"
+            size = "1280,11"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/tab_line.png"
+            zPosition = "1"
+            transparent = "1"
+            alphatest = "blend"/>
+        <widget
+            name = "plugin_icon"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/movies.png"
+            position = "1800,948"
+            size = "65,65"
+            transparent = "1"
+            alphatest = "blend"
+            borderWidth = "2"
+            borderColor = "#005f5f"/>
+        <widget
+            name = "infoload"
+            position = "30,45"
+            zPosition = "4"
+            size = "1185,888"
+            font = "Regular;34"
+            foregroundColor = "yellow"
+            transparent = "1"
+            halign = "center"
+            valign = "center"/>
+        <widget
+            name = "handlung"
+            position = "45,870"
+            size = "1140,126"
+            backgroundColor = "#080000"
+            transparent = "1"
+            font = "torrentPlayerFont;30"
+            valign = "top"
+            halign = "center"
+            zPosition = "1"/>
+        <widget
+            name = "info"
+            position = "1230,900"
+            zPosition = "4"
+            size = "660,540"
+            font = "Regular;33"
+            foregroundColor = "yellow"
+            transparent = "1"
+            halign = "center"
+            valign = "top"/>
+        <eLabel
+            position = "45,1009"
+            zPosition = "4"
+            size = "255,36"
+            halign = "left"
+            font = "torrentPlayerFont;30"
+            transparent = "1"
+            foregroundColor = "#ffffff"
+            backgroundColor = "#41000000"
+            text = " "/>
+        <ePixmap
+            position = "250,996"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/tab_active.png"
+            size = "306,55"
+            zPosition = "2"
+            backgroundColor = "#ffffff"
+            alphatest = "blend"/>
+        <ePixmap
+            position = "556,996"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/tab_active.png"
+            size = "306,55"
+            zPosition = "2"
+            backgroundColor = "#ffffff"
+            alphatest = "blend"/>
+        <ePixmap
+            position = "862,996"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/tab_active.png"
+            size = "306,55"
+            zPosition = "2"
+            backgroundColor = "#ffffff"
+            alphatest = "blend"/>
+        <ePixmap
+            position = "1168,996"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/tab_active.png"
+            size = "306,55"
+            zPosition = "2"
+            backgroundColor = "#ffffff"
+            alphatest = "blend"/>
+        <ePixmap
+            position = "262,1006"
+            size = "37,37"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/red.png"
+            zPosition = "3"
+            transparent = "1"
+            alphatest = "blend"/>
+        <ePixmap
+            position = "568,1006"
+            size = "37,37"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/green.png"
+            zPosition = "3"
+            transparent = "1"
+            alphatest = "blend"/>
+        <ePixmap
+            position = "874,1006"
+            size = "37,37"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/yellow.png"
+            zPosition = "3"
+            transparent = "1"
+            alphatest = "blend"/>
+        <ePixmap
+            position = "1180,1006"
+            size = "37,37"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/blue.png"
+            zPosition = "3"
+            transparent = "1"
+            alphatest = "blend"/>
+        <ePixmap
+            position = "1500,1006"
+            size = "65,50"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/micons/infofhd.png"
+            zPosition = "3"
+            transparent = "1"
+            alphatest = "blend"/>
+        <ePixmap
+            position = "1590,1006"
+            size = "65,50"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/micons/menufhd.png"
+            zPosition = "3"
+            transparent = "1"
+            alphatest = "blend"/>
+        <widget
+            name = "Key_red"
+            position = "240,1009"
+            zPosition = "4"
+            size = "210,36"
+            halign = "center"
+            font = "torrentPlayerFont;30"
+            transparent = "1"
+            foregroundColor = "#ffffff"
+            backgroundColor = "#41000000"
+            text = "Delete"/>
+        <widget
+            name = "Key_green"
+            position = "511,1009"
+            zPosition = "4"
+            size = "210,36"
+            halign = "center"
+            font = "torrentPlayerFont;27"
+            transparent = "1"
+            foregroundColor = "#ffffff"
+            backgroundColor = "#41000000"/>
+        <widget
+            name = "Key_yellow"
+            position = "905,1009"
+            zPosition = "4"
+            size = "217,36"
+            halign = "left"
+            font = "torrentPlayerFont;27"
+            transparent = "1"
+            foregroundColor = "#ffffff"
+            backgroundColor = "#41000000"/>
+        <widget
+            name = "Key_blue"
+            position = "1148,1009"
+            zPosition = "4"
+            size = "210,36"
+            halign = "center"
+            font = "torrentPlayerFont;27"
+            transparent = "1"
+            foregroundColor = "#ffffff"
+            backgroundColor = "#41000000"/>
+        <!--<widget backgroundColor="#41000000" foregroundColor="#ffffff" position="1239,82" size="570,45"  name="pr_time" font="torrentPlayerFont;33" />  -->
+        <!--<widget backgroundColor="#41000000" foregroundColor="#ffffff" position="1239,138" size="570,828" name="program" font="torrentPlayerFont;33" /> -->
+    </screen>
+
+    <screen
+        name = "torrentPlayerSetup2dreamos"
+        position = "center,center"
+        size = "1080,840"
+        backgroundColor = "#080000"
+        title = "torrentPlayer Settings">
+        <ePixmap
+            position = "118,781"
+            size = "37,37"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/red.png"
+            zPosition = "3"
+            transparent = "1"
+            alphatest = "blend"/>
+        <ePixmap
+            position = "424,781"
+            size = "37,37"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/green.png"
+            zPosition = "3"
+            transparent = "1"
+            alphatest = "blend"/>
+        <ePixmap
+            position = "724,781"
+            size = "37,37"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/blue.png"
+            zPosition = "3"
+            transparent = "1"
+            alphatest = "blend"/>
+        <eLabel
+            position = "95,775"
+            zPosition = "4"
+            size = "300,36"
+            halign = "center"
+            font = "torrentPlayerFont;33"
+            transparent = "1"
+            foregroundColor = "#ffffff"
+            backgroundColor = "#41000000"
+            text = "Cancel"/>
+        <eLabel
+            position = "415,775"
+            zPosition = "4"
+            size = "300,36"
+            halign = "center"
+            font = "torrentPlayerFont;33"
+            transparent = "1"
+            foregroundColor = "#ffffff"
+            backgroundColor = "#41000000"
+            text = "Save"/>
+        <eLabel
+            position = "742,784"
+            zPosition = "4"
+            size = "300,36"
+            halign = "center"
+            font = "torrentPlayerFont;30"
+            transparent = "1"
+            foregroundColor = "#ffffff"
+            backgroundColor = "#41000000"
+            text = " "/>
+        <ePixmap
+            position = "112,771"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/tab_active.png"
+            size = "306,55"
+            zPosition = "2"
+            backgroundColor = "#ffffff"
+            alphatest = "blend"/>
+        <ePixmap
+            position = "418,771"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/tab_active.png"
+            size = "306,55"
+            zPosition = "2"
+            backgroundColor = "#ffffff"
+            alphatest = "blend"/>
+        <ePixmap
+            position = "726,771"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/tab_active.png"
+            size = "306,55"
+            zPosition = "2"
+            backgroundColor = "#ffffff"
+            alphatest = "blend"/>
+        <widget
+            name = "config"
+            position = "30,75"
+            size = "1050,595"
+            scrollbarMode = "showOnDemand"
+            itemHeight = "60"
+            transparent = "1"
+            zPosition = "2"/>
+    </screen>
+    <screen
+        name = "torrentPlayerSetup1"
+        position = "center,center"
+        size = "1185,855"
+        backgroundColor = "#080000"
+        title = "Youtube setup">
+        <ePixmap
+            position = "118,796"
+            size = "37,37"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/red.png"
+            zPosition = "3"
+            transparent = "1"
+            alphatest = "blend"/>
+        <ePixmap
+            position = "424,796"
+            size = "37,37"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/green.png"
+            zPosition = "3"
+            transparent = "1"
+            alphatest = "blend"/>
+        <ePixmap
+            position = "724,796"
+            size = "37,37"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/blue.png"
+            zPosition = "3"
+            transparent = "1"
+            alphatest = "blend"/>
+        <eLabel
+            position = "89,799"
+            zPosition = "4"
+            size = "300,36"
+            halign = "center"
+            font = "torrentPlayerFont;33"
+            transparent = "1"
+            foregroundColor = "#ffffff"
+            backgroundColor = "#41000000"
+            text = "Cancel"/>
+        <eLabel
+            position = "410,799"
+            zPosition = "4"
+            size = "300,36"
+            halign = "center"
+            font = "torrentPlayerFont;33"
+            transparent = "1"
+            foregroundColor = "#ffffff"
+            backgroundColor = "#41000000"
+            text = "Save"/>
+        <ePixmap
+            position = "112,786"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/tab_active.png"
+            size = "306,55"
+            zPosition = "2"
+            backgroundColor = "#ffffff"
+            alphatest = "blend"/>
+        <ePixmap
+            position = "418,786"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/tab_active.png"
+            size = "306,55"
+            zPosition = "2"
+            backgroundColor = "#ffffff"
+            alphatest = "blend"/>
+        <ePixmap
+            position = "726,786"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/tab_active.png"
+            size = "306,55"
+            zPosition = "2"
+            backgroundColor = "#ffffff"
+            alphatest = "blend"/>
+        <widget
+            name = "config"
+            position = "52,75"
+            size = "1050,480"
+            scrollbarMode = "showOnDemand"
+            itemHeight = "50"
+            font = "torrentPlayerFont;33"
+            transparent = "1"
+            zPosition = "2"/>
+    </screen>
+    <screen
+        name = "torrentPlayerSetup1dreamos"
+        position = "center,center"
+        size = "1185,855"
+        backgroundColor = "#080000"
+        title = "Youtube setup">
+        <ePixmap
+            position = "118,796"
+            size = "37,37"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/red.png"
+            zPosition = "3"
+            transparent = "1"
+            alphatest = "blend"/>
+        <ePixmap
+            position = "424,796"
+            size = "37,37"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/green.png"
+            zPosition = "3"
+            transparent = "1"
+            alphatest = "blend"/>
+        <ePixmap
+            position = "724,796"
+            size = "37,37"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/blue.png"
+            zPosition = "3"
+            transparent = "1"
+            alphatest = "blend"/>
+        <eLabel
+            position = "89,799"
+            zPosition = "4"
+            size = "300,36"
+            halign = "center"
+            font = "torrentPlayerFont;33"
+            transparent = "1"
+            foregroundColor = "#ffffff"
+            backgroundColor = "#41000000"
+            text = "Cancel"/>
+        <eLabel
+            position = "410,799"
+            zPosition = "4"
+            size = "300,36"
+            halign = "center"
+            font = "torrentPlayerFont;33"
+            transparent = "1"
+            foregroundColor = "#ffffff"
+            backgroundColor = "#41000000"
+            text = "Save"/>
+        <ePixmap
+            position = "112,786"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/tab_active.png"
+            size = "306,55"
+            zPosition = "2"
+            backgroundColor = "#ffffff"
+            alphatest = "blend"/>
+        <ePixmap
+            position = "418,786"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/tab_active.png"
+            size = "306,55"
+            zPosition = "2"
+            backgroundColor = "#ffffff"
+            alphatest = "blend"/>
+        <ePixmap
+            position = "726,786"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/tab_active.png"
+            size = "306,55"
+            zPosition = "2"
+            backgroundColor = "#ffffff"
+            alphatest = "blend"/>
+        <widget
+            name = "config"
+            position = "52,75"
+            size = "1050,480"
+            scrollbarMode = "showOnDemand"
+            itemHeight = "50"
+            transparent = "1"
+            zPosition = "2"/>
+    </screen>
+    <screen
+        name = "torrentPlayerSetup2dreamos"
+        position = "center,center"
+        size = "1185,855"
+        backgroundColor = "#080000"
+        title = "Youtube setup">
+        <ePixmap
+            position = "118,796"
+            size = "37,37"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/red.png"
+            zPosition = "3"
+            transparent = "1"
+            alphatest = "blend"/>
+        <ePixmap
+            position = "424,796"
+            size = "37,37"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/green.png"
+            zPosition = "3"
+            transparent = "1"
+            alphatest = "blend"/>
+        <ePixmap
+            position = "724,796"
+            size = "37,37"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/blue.png"
+            zPosition = "3"
+            transparent = "1"
+            alphatest = "blend"/>
+        <eLabel
+            position = "89,799"
+            zPosition = "4"
+            size = "300,36"
+            halign = "center"
+            font = "torrentPlayerFont;33"
+            transparent = "1"
+            foregroundColor = "#ffffff"
+            backgroundColor = "#41000000"
+            text = "Cancel"/>
+        <eLabel
+            position = "410,799"
+            zPosition = "4"
+            size = "300,36"
+            halign = "center"
+            font = "torrentPlayerFont;33"
+            transparent = "1"
+            foregroundColor = "#ffffff"
+            backgroundColor = "#41000000"
+            text = "Save"/>
+        <ePixmap
+            position = "112,786"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/tab_active.png"
+            size = "306,55"
+            zPosition = "2"
+            backgroundColor = "#ffffff"
+            alphatest = "blend"/>
+        <ePixmap
+            position = "418,786"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/tab_active.png"
+            size = "306,55"
+            zPosition = "2"
+            backgroundColor = "#ffffff"
+            alphatest = "blend"/>
+        <ePixmap
+            position = "726,786"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/tab_active.png"
+            size = "306,55"
+            zPosition = "2"
+            backgroundColor = "#ffffff"
+            alphatest = "blend"/>
+        <widget
+            name = "config"
+            position = "52,75"
+            size = "1050,480"
+            scrollbarMode = "showOnDemand"
+            itemHeight = "50"
+            transparent = "1"
+            zPosition = "2"/>
+    </screen>
+    <screen
+        name = "torrentPlayerSetup2"
+        position = "center,center"
+        size = "1080,840"
+        backgroundColor = "#080000"
+        title = "torrentPlayer Settings">
+        <ePixmap
+            position = "118,781"
+            size = "37,37"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/red.png"
+            zPosition = "3"
+            transparent = "1"
+            alphatest = "blend"/>
+        <ePixmap
+            position = "424,781"
+            size = "37,37"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/green.png"
+            zPosition = "3"
+            transparent = "1"
+            alphatest = "blend"/>
+        <ePixmap
+            position = "724,781"
+            size = "37,37"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/blue.png"
+            zPosition = "3"
+            transparent = "1"
+            alphatest = "blend"/>
+        <eLabel
+            position = "95,775"
+            zPosition = "4"
+            size = "300,36"
+            halign = "center"
+            font = "torrentPlayerFont;33"
+            transparent = "1"
+            foregroundColor = "#ffffff"
+            backgroundColor = "#41000000"
+            text = "Cancel"/>
+        <eLabel
+            position = "415,775"
+            zPosition = "4"
+            size = "300,36"
+            halign = "center"
+            font = "torrentPlayerFont;33"
+            transparent = "1"
+            foregroundColor = "#ffffff"
+            backgroundColor = "#41000000"
+            text = "Save"/>
+        <eLabel
+            position = "742,784"
+            zPosition = "4"
+            size = "300,36"
+            halign = "center"
+            font = "torrentPlayerFont;30"
+            transparent = "1"
+            foregroundColor = "#ffffff"
+            backgroundColor = "#41000000"
+            text = " "/>
+        <ePixmap
+            position = "112,771"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/tab_active.png"
+            size = "306,55"
+            zPosition = "2"
+            backgroundColor = "#ffffff"
+            alphatest = "blend"/>
+        <ePixmap
+            position = "418,771"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/tab_active.png"
+            size = "306,55"
+            zPosition = "2"
+            backgroundColor = "#ffffff"
+            alphatest = "blend"/>
+        <ePixmap
+            position = "726,771"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/tab_active.png"
+            size = "306,55"
+            zPosition = "2"
+            backgroundColor = "#ffffff"
+            alphatest = "blend"/>
+        <widget
+            name = "config"
+            position = "30,75"
+            size = "1050,595"
+            scrollbarMode = "showOnDemand"
+            itemHeight = "60"
+            font = "Regular;35"
+            transparent = "1"
+            zPosition = "2"/>
+    </screen>
+    <screen
+        name = "torrentPlayerSetup4"
+        position = "center,center"
+        size = "1080,840"
+        backgroundColor = "#080000"
+        title = "Style Settings">
+   <ePixmap
+        position = "15,8"
+        size = "1060,65"
+        pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/topbarfhd.png"
+        zPosition = "2"  
+        transparent = "1" 
+        alphatest = "blend"/>
+      <widget
+            name = "topinfo"
+            position = "15,10"
+            zPosition = "3"
+            size = "1050,60"
+            font = "Regular;33"
+            foregroundColor = "#3F4E53"
+            transparent = "1"
+            halign = "center"
+            valign = "center"/>
+     <widget
+            name = "info"
+            position = "15,780"
+            zPosition = "2"
+            size = "1050,90"
+            font = "Regular;33"
+            foregroundColor = "#ffffff"
+            transparent = "0"
+            halign = "center"
+            valign = "center"/>
+        <widget
+            name = "menu"
+            position = "30,75"
+            size = "1050,675"
+            itemHeight = "35"
+            scrollbarMode = "showOnDemand"
+            transparent = "1"
+            zPosition = "2"/>
+        <widget
+            name = "pixmap2"
+            backgroundColor = "#ffffff"
+            position = "0,0"
+            size = "1080,770"           
+            zPosition = "1"
+            alphatest = "blend"/>
+        <ePixmap
+            position = "10,10"
+            size = "25,25"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/topbar.png"
+            zPosition = "3"
+            transparent = "1"
+            alphatest = "blend"/>
+    </screen>
+ <screen name="torrentPlayerupdates" position="center,center" size="1413,1053" flags="wfNoBorder"><ePixmap position="0,0" size="1413,1053" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/picons/menufhd.jpg" zPosition="1" transparent="1" alphatest="blend" /><widget name="info" position="2,30" zPosition="2" size="1413,300" font="Regular;33" foregroundColor="#ffffff" transparent="1" halign="center" valign="center" /><eLabel position="8,300" zPosition="4" size="450,600" halign="center" font="torrentPlayerFont;36" transparent="1" foregroundColor="#0abce0" backgroundColor="#10d900" text="mFaraj-aime_jeux\n\nhttps://tunisia-sat.com/\nhttp://yassinov.com" /><widget name="info2" position="8,720" zPosition="2" size="1350,225" font="torrentPlayerFont;33" foregroundColor="#ffffff" transparent="0" halign="center" valign="center" text="torrentPlayer" /><eLabel position="150,930" zPosition="4" size="450,45" halign="center" font="torrentPlayerFont;33" transparent="0" foregroundColor="#ffffff" backgroundColor="#10d900" text="Install last version" /><eLabel position="750,930" zPosition="4" size="450,45" halign="center" font="torrentPlayerFont;33" transparent="0" foregroundColor="#ffffff" backgroundColor="#1f00a2" text="Install last update" /></screen>
+ 
+<screen
+        name = "torrentPlayerbootlogo"
+        position = "center,center"
+        size = "1272,1053"
+        title = ""
+        backgroundColor = "#ffffff"
+        flags = "wfNoBorder">
+        <ePixmap
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/picons/menufhd.jpg"
+            position = "0,0"
+            transparent = "1"
+            size = "1272,1053"/>
+    </screen>
+
+<screen
+        name = "torrentPlayerfavlocation"
+        position = "center,center"
+        title = "Select favorites location"
+        size = "1920,1080"
+        flags = "wfNoBorder">
+        <widget
+            source = "Title"
+            render = "Label"
+            position = "120,120"
+            size = "1125,45"
+            zPosition = "3"
+            font = "Regular;39"
+            transparent = "1"/>
+        <widget
+            source = "session.VideoPicture"
+            render = "Pig"
+            position = "120,180"
+            size = "570,322"
+            zPosition = "3"
+            backgroundColor = "#ff000000"/>
+        <widget
+            source = "text"
+            render = "Label"
+            position = "120,705"
+            size = "390,37"
+            font = "Regular;33"
+            transparent = "1"
+            zPosition = "1"
+            foregroundColor = "#ffffff"/>
+        <widget
+            source = "oktext"
+            render = "Label"
+            position = "810,750"
+            size = "990,60"
+            font = "Regular;33"
+            transparent = "1"
+            zPosition = "1"
+            halign = "left"
+            valign = "center"/>
+        <widget
+            name = "target"
+            position = "120,750"
+            size = "810,33"
+            valign = "left"
+            font = "Regular;33"
+            transparent = "1"/>
+        <widget
+            name = "filelist"
+            position = "825,180"
+            size = "915,754"
+            zPosition = "1"
+            scrollbarMode = "showOnDemand"
+            selectionDisabled = "1"
+            transparent = "1"/>
+        <ePixmap
+            position = "433,931"
+            size = "37,37"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/red.png"
+            zPosition = "3"
+            transparent = "1"
+            alphatest = "blend"/>
+        <ePixmap
+            position = "739,931"
+            size = "37,37"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/green.png"
+            zPosition = "3"
+            transparent = "1"
+            alphatest = "blend"/>
+        <ePixmap
+            position = "1033,931"
+            size = "37,37"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/yellow.png"
+            zPosition = "3"
+            transparent = "1"
+            alphatest = "blend"/>
+        <eLabel
+            position = "390,920"
+            zPosition = "4"
+            size = "300,36"
+            halign = "center"
+            font = "torrentPlayerFont;33"
+            transparent = "1"
+            foregroundColor = "#ffffff"
+            backgroundColor = "#41000000"
+            text = "Cancel"/>
+        <eLabel
+            position = "700,920"
+            zPosition = "4"
+            size = "300,36"
+            halign = "center"
+            font = "torrentPlayerFont;33"
+            transparent = "1"
+            foregroundColor = "#ffffff"
+            backgroundColor = "#41000000"
+            text = "Save"/>
+        <eLabel
+            position = "1011,920"
+            zPosition = "4"
+            size = "300,36"
+            halign = "center"
+            font = "torrentPlayerFont;30"
+            transparent = "1"
+            foregroundColor = "#ffffff"
+            backgroundColor = "#41000000"
+            text = "Reset fav"/>
+        <ePixmap
+            position = "427,921"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/tab_active.png"
+            size = "306,55"
+            zPosition = "2"
+            backgroundColor = "#ffffff"
+            alphatest = "blend"/>
+        <ePixmap
+            position = "733,921"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/tab_active.png"
+            size = "306,55"
+            zPosition = "2"
+            backgroundColor = "#ffffff"
+            alphatest = "blend"/>
+        <ePixmap
+            position = "1039,921"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/tab_active.png"
+            size = "306,55"
+            zPosition = "2"
+            backgroundColor = "#ffffff"
+            alphatest = "blend"/>
+    </screen>
+    <screen
+        name = "torrentPlayersubmain3"
+        position = "center,center"
+        size = "1920,1080"
+        flags = "wfNoBorder"
+        backgroundColor = "#00060606">
+        <ePixmap
+            position = "center,30"
+            size = "1280,11"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/tab_line.png"
+            zPosition = "1"
+            transparent = "1"
+            alphatest = "blend"/>
+        <ePixmap
+            position = "center,900"
+            size = "1280,11"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/tab_line.png"
+            zPosition = "1"
+            transparent = "1"
+            alphatest = "blend"/>
+        <widget
+            name = "streamlist"
+            position = "30,75"
+            size = "570,720"
+            backgroundColor = "#080000"
+            foregroundColor = "yellow"
+            backgroundColorSelected = "#41000000"
+            selectionPixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/sel2.png"
+            scrollbarMode = "showOnDemand"
+            transparent = "0"/>
+        <widget
+            name = "streamlist2"
+            position = "600,75"
+            size = "570,720"
+            backgroundColor = "#080000"
+            foregroundColor = "yellow"
+            backgroundColorSelected = "#41000000"
+            selectionPixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/sel2.png"
+            scrollbarMode = "showOnDemand"
+            transparent = "0"/>
+        <widget
+            name = "streamlist3"
+            position = "1200,75"
+            size = "570,720"
+            backgroundColor = "#080000"
+            foregroundColor = "yellow"
+            backgroundColorSelected = "#41000000"
+            selectionPixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/sel2.png"
+            scrollbarMode = "showOnDemand"
+            transparent = "0"/>
+        <ePixmap
+            position = "1650,960"
+            size = "65,50"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/micons/menufhd.png"
+            zPosition = "3"
+            transparent = "1"
+            alphatest = "blend"/>
+        <ePixmap
+            position = "1034,932"
+            size = "38,38"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/yellow.png"
+            zPosition = "3"
+            transparent = "1"
+            alphatest = "blend"/>
+        <eLabel
+            text = "Set default"
+            position = "1010,920"
+            zPosition = "4"
+            size = "300,36"
+            halign = "center"
+            font = "torrentPlayerFont;30"
+            transparent = "1"
+            foregroundColor = "#ffffff"
+            backgroundColor = "#41000000"/>
+        <ePixmap
+            position = "1040,921"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/tab_active.png"
+            size = "306,56"
+            zPosition = "2"
+            backgroundColor = "#ffffff"
+            alphatest = "blend"/>
+        <widget
+            name = "info"
+            position = "30,825"
+            zPosition = "2"
+            size = "1050,75"
+            font = "Regular;36"
+            foregroundColor = "#ffffff"
+            transparent = "1"
+            halign = "center"
+            valign = "center"/>
+    </screen>
+    <screen
+        name = "torrentPlayerdownload"
+        position = "center,center"
+        size = "1050,450"
+        title = "Download menu">
+        <widget
+            name = "text"
+            position = "105,12"
+            size = "1050,120"
+            font = "Regular;33"
+            transparent = "1"/>
+        <widget
+            name = "list"
+            position = "22,150"
+            itemHeight = "50"
+            font = "Regular;31"
+            size = "975,300"
+            transparent = "1"/>
+    </screen>
+    <screen
+        name = "torrentPlayerdownloaddreamos"
+        position = "center,center"
+        size = "1050,450"
+        title = "Download menu">
+        <widget
+            name = "text"
+            position = "105,12"
+            size = "1050,120"
+            font = "Regular;33"
+            transparent = "1"/>
+        <widget
+            name = "list"
+            position = "22,150"
+            itemHeight = "50"
+            size = "975,300"
+            transparent = "1"/>
+    </screen>
+    <screen
+        name = "torrentPlayerdownloadtasks"
+        position = "center,center"
+        size = "1500,870"
+        backgroundColor = "#00060606">
+        <widget
+            name = "title"
+            position = "90,75"
+            size = "900,75"
+            zPosition = "5"
+            valign = "center"
+            halign = "left"
+            font = "Regular;31"
+            transparent = "1"
+            foregroundColor = "white"
+            shadowColor = "#000000"
+            shadowOffset = "-1,-1"/>
+        <widget
+            source = "tasklist"
+            render = "Listbox"
+            position = "90,180"
+            size = "1400,555"
+            zPosition = "7"
+            itemHeight = "50"
+            scrollbarMode = "showOnDemand"
+            transparent = "1">
+            <convert type = "TemplatedMultiContent">
+                {"template": [
+                MultiContentEntryText(pos = (0, 1), size = (300, 40), font=1, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the name
+                MultiContentEntryText(pos = (310, 1), size = (250, 40), font=1, flags = RT_HALIGN_RIGHT, text = 2), # index 2 is the state
+                MultiContentEntryProgress(pos = (570, 1), size = (300, 40), percent = -3), # index 3 should be progress
+                MultiContentEntryText(pos = (900, 1), size = (500, 40), font=1, flags = RT_HALIGN_CENTER, text = 4), # index 4 is the percentage
+                ],
+                "fonts": [gFont("torrentPlayerFont", 35),gFont("torrentPlayerFont", 30)],
+                "itemHeight": 48
+                }
+            </convert>
+        </widget>
+        <ePixmap
+            position = "118,781"
+            size = "37,37"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/red.png"
+            zPosition = "3"
+            transparent = "1"
+            alphatest = "blend"/>
+        <ePixmap
+            position = "424,781"
+            size = "37,37"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/green.png"
+            zPosition = "3"
+            transparent = "1"
+            alphatest = "blend"/>
+        <ePixmap
+            position = "724,781"
+            size = "37,37"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/blue.png"
+            zPosition = "3"
+            transparent = "1"
+            alphatest = "blend"/>
+        <eLabel
+            position = "119,774"
+            zPosition = "4"
+            size = "300,36"
+            halign = "center"
+            font = "torrentPlayerFont;33"
+            transparent = "1"
+            foregroundColor = "#ffffff"
+            backgroundColor = "#41000000"
+            text = "Stop"/>
+        <eLabel
+            position = "402,774"
+            zPosition = "4"
+            size = "300,36"
+            halign = "center"
+            font = "torrentPlayerFont;33"
+            transparent = "1"
+            foregroundColor = "#ffffff"
+            backgroundColor = "#41000000"
+            text = "Play"/>
+        <eLabel
+            position = "716,774"
+            zPosition = "4"
+            size = "300,36"
+            halign = "center"
+            font = "torrentPlayerFont;33"
+            transparent = "1"
+            foregroundColor = "#ffffff"
+            backgroundColor = "#41000000"
+            text = "Downloads"/>
+        <ePixmap
+            position = "112,771"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/tab_active.png"
+            size = "306,55"
+            zPosition = "2"
+            backgroundColor = "#ffffff"
+            alphatest = "blend"/>
+        <ePixmap
+            position = "418,771"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/tab_active.png"
+            size = "306,55"
+            zPosition = "2"
+            backgroundColor = "#ffffff"
+            alphatest = "blend"/>
+        <ePixmap
+            position = "726,771"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/tab_active.png"
+            size = "306,55"
+            zPosition = "2"
+            backgroundColor = "#ffffff"
+            alphatest = "blend"/>
+    </screen>
+    <screen
+        name = "torrentPlayerdownloadlocation"
+        position = "center,center"
+        title = " "
+        size = "1920,1080"
+        flags = "wfNoBorder">
+        <widget
+            source = "Title"
+            render = "Label"
+            position = "120,120"
+            size = "1125,45"
+            zPosition = "3"
+            font = "Regular;39"
+            transparent = "1"/>
+        <widget
+            source = "session.VideoPicture"
+            render = "Pig"
+            position = "120,180"
+            size = "570,322"
+            zPosition = "3"
+            backgroundColor = "#ff000000"/>
+        <widget
+            source = "text"
+            render = "Label"
+            position = "120,705"
+            size = "390,37"
+            font = "Regular;33"
+            transparent = "1"
+            zPosition = "1"
+            foregroundColor = "#ffffff"/>
+        <widget
+            source = "oktext"
+            render = "Label"
+            position = "810,894"
+            size = "990,37"
+            font = "Regular;33"
+            transparent = "1"
+            zPosition = "1"
+            halign = "left"
+            valign = "center"/>
+        <widget
+            name = "target"
+            position = "120,750"
+            size = "810,33"
+            valign = "left"
+            font = "Regular;33"
+            transparent = "1"/>
+        <widget
+            name = "filelist"
+            position = "825,180"
+            size = "915,754"
+            zPosition = "1"
+            scrollbarMode = "showOnDemand"
+            selectionDisabled = "1"
+            transparent = "1"/>
+        <ePixmap
+            position = "583,931"
+            size = "37,37"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/red.png"
+            zPosition = "3"
+            transparent = "1"
+            alphatest = "blend"/>
+        <ePixmap
+            position = "889,931"
+            size = "37,37"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/green.png"
+            zPosition = "3"
+            transparent = "1"
+            alphatest = "blend"/>
+        <eLabel
+            position = "564,925"
+            zPosition = "4"
+            size = "300,36"
+            halign = "center"
+            font = "torrentPlayerFont;33"
+            transparent = "1"
+            foregroundColor = "#ffffff"
+            backgroundColor = "#41000000"
+            text = "Cancel"/>
+        <eLabel
+            position = "867,925"
+            zPosition = "4"
+            size = "300,36"
+            halign = "center"
+            font = "torrentPlayerFont;33"
+            transparent = "1"
+            foregroundColor = "#ffffff"
+            backgroundColor = "#41000000"
+            text = "Save"/>
+        <ePixmap
+            position = "577,921"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/tab_active.png"
+            size = "306,55"
+            zPosition = "2"
+            backgroundColor = "#ffffff"
+            alphatest = "blend"/>
+        <ePixmap
+            position = "883,921"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/tab_active.png"
+            size = "306,55"
+            zPosition = "2"
+            backgroundColor = "#ffffff"
+            alphatest = "blend"/>
+    </screen>
+    <screen
+        name = "AddonstartScreen"
+        position = "center,center"
+        size = "1350,930"
+        backgroundColor = "#080000"
+        flags = "wfNoBorder">
+        <ePixmap
+            position = "center,0"
+            size = "300,243"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/team.jpg"
+            zPosition = "1"
+            transparent = "1"
+            alphatest = "blend"/>
+        <ePixmap
+            position = "center,20"
+            size = "1280,16"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/tab_line.png"
+            zPosition = "1"
+            transparent = "1"
+            alphatest = "blend"/>
+        <ePixmap
+            position = "center,580"
+            size = "1280,16"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/tab_line.png"
+            zPosition = "1"
+            transparent = "1"
+            alphatest = "blend"/>
+        <widget
+            name = "bild"
+            position = "675,135"
+            size = "72,72"
+            transparent = "1"
+            zPosition = "2"/>
+        <widget
+            name = "infoload"
+            position = "0,243"
+            zPosition = "4"
+            size = "1350,400"
+            font = "Regular;34"
+            foregroundColor = "yellow"
+            transparent = "1"
+            halign = "center"
+            valign = "center"/>
+        <widget
+            name = "handlung"
+            position = "0,643"
+            size = "1350,126"
+            backgroundColor = "#080000"
+            transparent = "1"
+            font = "torrentPlayerFont;30"
+            valign = "top"
+            halign = "center"
+            zPosition = "1"/>
+        <ePixmap
+            position = "10,780"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/tab_active.png"
+            size = "306,56"
+            zPosition = "2"
+            backgroundColor = "#ffffff"
+            alphatest = "blend"/>
+        <ePixmap
+            position = "316,780"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/tab_active.png"
+            size = "306,56"
+            zPosition = "2"
+            backgroundColor = "#ffffff"
+            alphatest = "blend"/>
+        <ePixmap
+            position = "622,780"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/tab_active.png"
+            size = "306,56"
+            zPosition = "2"
+            backgroundColor = "#ffffff"
+            alphatest = "blend"/>
+        <ePixmap
+            position = "928,780"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/tab_active.png"
+            size = "306,56"
+            zPosition = "2"
+            backgroundColor = "#ffffff"
+            alphatest = "blend"/>
+        <ePixmap
+            position = "22,782"
+            size = "38,38"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/red.png"
+            zPosition = "3"
+            transparent = "1"
+            alphatest = "blend"/>
+        <ePixmap
+            position = "328,782"
+            size = "38,38"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/green.png"
+            zPosition = "3"
+            transparent = "1"
+            alphatest = "blend"/>
+        <ePixmap
+            position = "634,782"
+            size = "38,38"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/yellow.png"
+            zPosition = "3"
+            transparent = "1"
+            alphatest = "blend"/>
+        <ePixmap
+            position = "940,782"
+            size = "38,38"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/blue.png"
+            zPosition = "3"
+            transparent = "1"
+            alphatest = "blend"/>
+        <ePixmap
+            position = "1260,782"
+            size = "65,50"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/micons/infofhd.png"
+            zPosition = "3"
+            transparent = "1"
+            alphatest = "blend"/>
+        <eLabel
+            position = "20,784"
+            zPosition = "4"
+            size = "210,36"
+            halign = "center"
+            font = "torrentPlayerFont;30"
+            transparent = "1"
+            foregroundColor = "#ffffff"
+            backgroundColor = "#41000000"
+            text = "Exit"/>
+        <widget
+            name = "Key_green"
+            position = "352,784"
+            zPosition = "4"
+            size = "210,36"
+            halign = "center"
+            font = "torrentPlayerFont;27"
+            transparent = "1"
+            foregroundColor = "#ffffff"
+            backgroundColor = "#41000000"/>
+        <widget
+            name = "Key_yellow"
+            position = "665,784"
+            zPosition = "4"
+            size = "218,36"
+            halign = "left"
+            font = "torrentPlayerFont;27"
+            transparent = "1"
+            foregroundColor = "#ffffff"
+            backgroundColor = "#41000000"/>
+        <widget
+            name = "Key_blue"
+            position = "938,784"
+            zPosition = "4"
+            size = "210,36"
+            halign = "center"
+            font = "torrentPlayerFont;27"
+            transparent = "1"
+            foregroundColor = "#ffffff"
+            backgroundColor = "#41000000"/>
+    </screen>
+<screen
+    name = "torrentPlayeraddons2"
+    position = "center,center"
+    size = "1920,1080"
+    title = "torrentPlayer-addons"
+    flags = "wfNoBorder">
+    <widget
+        source = "Title"
+        render = "Label"
+        position = "0,1033"
+        foregroundColor = "#084B8A"
+        size = "1920,50"
+        font = "Regular; 55"
+        backgroundColor = "black"
+        zPosition = "2"
+        transparent = "1"
+        halign = "center"
+        valign = "center"/>
+    <ePixmap
+        position = "center,center"
+        size = "1920,1080"
+        pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/picons/TsMenu2.png"
+        zPosition = "0"
+        transparent = "1"
+        alphatest = "on"/>
+    <widget
+        name = "fanArt"
+        position = "center,center"
+        size = "1920,1080"
+        zPosition = "1"
+        transparent = "10"
+        alphatest = "on"/>
+    <ePixmap
+        position = "center,25"
+        size = "1280,16"
+        pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/tab_line.png"
+        zPosition = "10"
+        transparent = "1"
+        alphatest = "blend"/>
+    <ePixmap
+        position = "center,860"
+        size = "1280,16"
+        pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/tab_line.png"
+        zPosition = "10"
+        transparent = "1"
+        alphatest = "blend"/>
+    <widget
+        name = "frame"
+        position = "0,0"
+        size = "300,200"
+        pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/pic_frame3fhd.png"
+        zPosition = "1"
+        alphatest = "on"/>
+    <widget
+        source = "label0"
+        render = "Label"
+        position = "22,237"
+        halign = "center"
+        valign = "center"
+        size = "300,36"
+        font = "Regular;33"
+        zPosition = "10"
+        backgroundColor = "#080000"
+        transparent = "1"
+        noWrap = "1"
+        foregroundColor = "yellow"/>
+    <widget
+        name = "thumb0"
+        position = "82,73"
+        size = "225,153"
+        zPosition = "2"
+        transparent = "1"
+        alphatest = "on"/>
+    <widget
+        source = "label1"
+        render = "Label"
+        position = "308,237"
+        halign = "center"
+        valign = "center"
+        size = "300,36"
+        font = "Regular;33"
+        zPosition = "10"
+        backgroundColor = "#080000"
+        transparent = "1"
+        noWrap = "1"
+        foregroundColor = "yellow"/>
+    <widget
+        name = "thumb1"
+        position = "368,73"
+        size = "225,153"
+        zPosition = "2"
+        transparent = "1"
+        alphatest = "on"/>
+    <widget
+        source = "label2"
+        render = "Label"
+        position = "592,237"
+        halign = "center"
+        valign = "center"
+        size = "300,36"
+        font = "Regular;33"
+        zPosition = "10"
+        backgroundColor = "#080000"
+        transparent = "1"
+        noWrap = "1"
+        foregroundColor = "yellow"/>
+    <widget
+        name = "thumb2"
+        position = "652,73"
+        size = "225,153"
+        zPosition = "2"
+        transparent = "1"
+        alphatest = "on"/>
+    <widget
+        source = "label3"
+        render = "Label"
+        position = "878,237"
+        halign = "center"
+        valign = "center"
+        size = "300,36"
+        font = "Regular;33"
+        zPosition = "10"
+        backgroundColor = "#080000"
+        transparent = "1"
+        noWrap = "1"
+        foregroundColor = "yellow"/>
+    <widget
+        name = "thumb3"
+        position = "938,73"
+        size = "225,153"
+        zPosition = "2"
+        transparent = "1"
+        alphatest = "on"/>
+    <widget
+        source = "label4"
+        render = "Label"
+        position = "1162,237"
+        halign = "center"
+        valign = "center"
+        size = "300,36"
+        font = "Regular;27"
+        zPosition = "10"
+        backgroundColor = "#080000"
+        transparent = "1"
+        noWrap = "1"
+        foregroundColor = "yellow"/>
+    <widget
+        name = "thumb4"
+        position = "1222,73"
+        size = "225,153"
+        zPosition = "2"
+        transparent = "1"
+        alphatest = "on"/>
+    <widget
+        source = "label5"
+        render = "Label"
+        position = "1448,237"
+        halign = "center"
+        valign = "center"
+        size = "300,36"
+        font = "Regular;33"
+        zPosition = "10"
+        backgroundColor = "#080000"
+        transparent = "1"
+        noWrap = "1"
+        foregroundColor = "yellow"/>
+    <widget
+        name = "thumb5"
+        position = "1508,73"
+        size = "225,153"
+        zPosition = "2"
+        transparent = "1"
+        alphatest = "on"/>
+    <widget
+        source = "label6"
+        render = "Label"
+        position = "22,510"
+        halign = "center"
+        valign = "center"
+        size = "300,36"
+        font = "Regular;33"
+        zPosition = "10"
+        backgroundColor = "#080000"
+        transparent = "1"
+        noWrap = "1"
+        foregroundColor = "yellow"/>
+    <widget
+        name = "thumb6"
+        position = "82,346"
+        size = "225,153"
+        zPosition = "2"
+        transparent = "1"
+        alphatest = "on"/>
+    <widget
+        source = "label7"
+        render = "Label"
+        position = "308,510"
+        halign = "center"
+        valign = "center"
+        size = "300,36"
+        font = "Regular;33"
+        zPosition = "10"
+        backgroundColor = "#080000"
+        transparent = "1"
+        noWrap = "1"
+        foregroundColor = "yellow"/>
+    <widget
+        name = "thumb7"
+        position = "368,346"
+        size = "225,153"
+        zPosition = "2"
+        transparent = "1"
+        alphatest = "on"/>
+    <widget
+        source = "label8"
+        render = "Label"
+        position = "592,510"
+        halign = "center"
+        valign = "center"
+        size = "300,36"
+        font = "Regular;33"
+        zPosition = "10"
+        backgroundColor = "#080000"
+        transparent = "1"
+        noWrap = "1"
+        foregroundColor = "yellow"/>
+    <widget
+        name = "thumb8"
+        position = "652,346"
+        size = "225,153"
+        zPosition = "2"
+        transparent = "1"
+        alphatest = "on"/>
+    <widget
+        source = "label9"
+        render = "Label"
+        position = "878,510"
+        halign = "center"
+        valign = "center"
+        size = "300,36"
+        font = "Regular;33"
+        zPosition = "10"
+        backgroundColor = "#080000"
+        transparent = "1"
+        noWrap = "1"
+        foregroundColor = "yellow"/>
+    <widget
+        name = "thumb9"
+        position = "938,346"
+        size = "225,153"
+        zPosition = "2"
+        transparent = "1"
+        alphatest = "on"/>
+    <widget
+        source = "label10"
+        render = "Label"
+        position = "1162,510"
+        halign = "center"
+        valign = "center"
+        size = "300,36"
+        font = "Regular;33"
+        zPosition = "10"
+        backgroundColor = "#080000"
+        transparent = "1"
+        noWrap = "1"
+        foregroundColor = "yellow"/>
+    <widget
+        name = "thumb10"
+        position = "1222,346"
+        size = "225,153"
+        zPosition = "2"
+        transparent = "1"
+        alphatest = "on"/>
+    <widget
+        source = "label11"
+        render = "Label"
+        position = "1448,510"
+        halign = "center"
+        valign = "center"
+        size = "300,36"
+        font = "Regular;33"
+        zPosition = "10"
+        backgroundColor = "#080000"
+        transparent = "1"
+        noWrap = "1"
+        foregroundColor = "yellow"/>
+    <widget
+        name = "thumb11"
+        position = "1508,346"
+        size = "225,153"
+        zPosition = "2"
+        transparent = "1"
+        alphatest = "on"/>
+    <widget
+        source = "label12"
+        render = "Label"
+        position = "22,783"
+        halign = "center"
+        valign = "center"
+        size = "300,36"
+        font = "Regular;33"
+        zPosition = "10"
+        backgroundColor = "#080000"
+        transparent = "1"
+        noWrap = "1"
+        foregroundColor = "yellow"/>
+    <widget
+        name = "thumb12"
+        position = "82,619"
+        size = "225,153"
+        zPosition = "2"
+        transparent = "1"
+        alphatest = "on"/>
+    <widget
+        source = "label13"
+        render = "Label"
+        position = "308,783"
+        halign = "center"
+        valign = "center"
+        size = "300,36"
+        font = "Regular;33"
+        zPosition = "10"
+        backgroundColor = "#080000"
+        transparent = "1"
+        noWrap = "1"
+        foregroundColor = "yellow"/>
+    <widget
+        name = "thumb13"
+        position = "368,619"
+        size = "225,153"
+        zPosition = "2"
+        transparent = "1"
+        alphatest = "on"/>
+    <widget
+        source = "label14"
+        render = "Label"
+        position = "572,783"
+        halign = "center"
+        valign = "center"
+        size = "300,36"
+        font = "Regular;33"
+        zPosition = "10"
+        backgroundColor = "#080000"
+        transparent = "1"
+        noWrap = "1"
+        foregroundColor = "yellow"/>
+    <widget
+        name = "thumb14"
+        position = "632,619"
+        size = "225,153"
+        zPosition = "2"
+        transparent = "1"
+        alphatest = "on"/>
+    <widget
+        source = "label15"
+        render = "Label"
+        position = "878,783"
+        halign = "center"
+        valign = "center"
+        size = "300,36"
+        font = "Regular;33"
+        zPosition = "10"
+        backgroundColor = "#080000"
+        transparent = "1"
+        noWrap = "1"
+        foregroundColor = "yellow"/>
+    <widget
+        name = "thumb15"
+        position = "938,619"
+        size = "225,153"
+        zPosition = "2"
+        transparent = "1"
+        alphatest = "on"/>
+    <widget
+        source = "label16"
+        render = "Label"
+        position = "1116,783"
+        halign = "center"
+        valign = "center"
+        size = "300,36"
+        font = "Regular;33"
+        zPosition = "10"
+        backgroundColor = "#080000"
+        transparent = "1"
+        noWrap = "1"
+        foregroundColor = "yellow"/>
+    <widget
+        name = "thumb16"
+        position = "1222,619"
+        size = "225,153"
+        zPosition = "2"
+        transparent = "1"
+        alphatest = "on"/>
+    <widget
+        source = "label17"
+        render = "Label"
+        position = "1448,783"
+        halign = "center"
+        valign = "center"
+        size = "300,36"
+        font = "Regular;33"
+        zPosition = "10"
+        backgroundColor = "#080000"
+        transparent = "1"
+        noWrap = "1"
+        foregroundColor = "yellow"/>
+    <widget
+        name = "thumb17"
+        position = "1508,619"
+        size = "225,153"
+        zPosition = "2"
+        transparent = "1"
+        alphatest = "on"/>
+    <widget
+        name = "info"
+        position = "0,875"
+        size = "1920,87"
+        font = "torrentPlayerFont;35"
+        foregroundColor = "#084B8A"
+        zPosition = "10"
+        backgroundColor = "#080000"
+        transparent = "0"
+        halign = "center"
+        valign = "center"/>
+    <!--<ePixmap
+    position="440,1006"
+    size="38,38"
+    pixmap="/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/green.png"
+    zPosition="3"
+    transparent="1"
+    alphatest="blend" />
+    <ePixmap
+    position="746,1006"
+    size="38,38"
+    pixmap="/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/yellow.png"
+    zPosition="3"
+    transparent="1"
+    alphatest="blend" />
+    <ePixmap
+    position="1066,1006"
+    size="38,38"
+    pixmap="/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/blue.png"
+    zPosition="3"
+    transparent="1"
+    alphatest="blend" /> -->
+    <widget
+        name = "Key_red"
+        position = "105,980"
+        zPosition = "4"
+        size = "210,36"
+        halign = "center"
+        font = "torrentPlayerFont;27"
+        transparent = "1"
+        foregroundColor = "#ffffff"
+        backgroundColor = "#41000000"/>
+    <widget
+        name = "Key_green"
+        position = "690,980"
+        zPosition = "4"
+        size = "218,36"
+        halign = "center"
+        font = "torrentPlayerFont;27"
+        transparent = "1"
+        foregroundColor = "#ffffff"
+        backgroundColor = "#41000000"/>
+    <widget
+        name = "Key_yellow"
+        position = "348,980"
+        zPosition = "4"
+        size = "270,36"
+        halign = "center"
+        font = "torrentPlayerFont;27"
+        transparent = "1"
+        foregroundColor = "#ffffff"
+        backgroundColor = "#41000000"/>
+    <widget
+        name = "Key_blue"
+        position = "970,980"
+        zPosition = "4"
+        size = "270,36"
+        halign = "center"
+        font = "torrentPlayerFont;27"
+        transparent = "1"
+        foregroundColor = "#ffffff"
+        backgroundColor = "#41000000"/>
+</screen>
+    <screen
+        name = "torrentPlayeraddons2_dreamos"
+        position = "center,center"
+        size = "1920,1080"
+        backgroundColor = "#000000"
+        transparent = "0"
+        flags = "wfNoBorder">
+
+        <widget
+            name = "fanArt"
+            position = "center,center"
+            size = "1920,1080"            
+            zPosition = "1"
+            transparent="10"
+            alphatest = "on"/>
+        
+        <ePixmap
+            position = "center,25"
+            size = "1280,16"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/tab_line.png"
+            zPosition = "10"
+            transparent = "1"
+            alphatest = "blend"/>
+        <ePixmap
+            position = "center,860"
+            size = "1280,16"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/tab_line.png"
+            zPosition = "10"
+            transparent = "1"
+            alphatest = "blend"/>
+        <widget
+            name = "frame"
+            position = "45,52"
+            size = "180,180"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/pic_frame3fhd.png"
+            zPosition = "1"
+            alphatest = "on"/>
+        <widget
+            source = "label0"
+            render = "Label"
+            position = "22,237"
+            size = "225,36"
+            font = "Regular;33"
+            zPosition = "2"
+            transparent = "0"
+            noWrap = "1"
+            foregroundColor = "yellow"/>
+        <widget
+            name = "thumb0"
+            position = "22,63"
+            size = "225,153"
+            zPosition = "2"
+            transparent = "1"
+            alphatest = "on"/>
+        <widget
+            source = "label1"
+            render = "Label"
+            position = "308,237"
+            size = "225,36"
+            font = "Regular;33"
+            zPosition = "2"
+            transparent = "0"
+            noWrap = "1"
+            foregroundColor = "yellow"/>
+        <widget
+            name = "thumb1"
+            position = "308,63"
+            size = "225,153"
+            zPosition = "2"
+            transparent = "1"
+            alphatest = "on"/>
+        <widget
+            source = "label2"
+            render = "Label"
+            position = "592,237"
+            size = "225,36"
+            font = "Regular;33"
+            zPosition = "2"
+            transparent = "0"
+            noWrap = "1"
+            foregroundColor = "yellow"/>
+        <widget
+            name = "thumb2"
+            position = "592,63"
+            size = "225,153"
+            zPosition = "2"
+            transparent = "1"
+            alphatest = "on"/>
+        <widget
+            source = "label3"
+            render = "Label"
+            position = "878,237"
+            size = "225,36"
+            font = "Regular;33"
+            zPosition = "2"
+            transparent = "0"
+            noWrap = "1"
+            foregroundColor = "yellow"/>
+        <widget
+            name = "thumb3"
+            position = "878,63"
+            size = "225,153"
+            zPosition = "2"
+            transparent = "1"
+            alphatest = "on"/>
+        <widget
+            source = "label4"
+            render = "Label"
+            position = "1162,237"
+            size = "225,36"
+            font = "Regular;27"
+            zPosition = "2"
+            transparent = "0"
+            noWrap = "1"
+            foregroundColor = "yellow"/>
+        <widget
+            name = "thumb4"
+            position = "1162,63"
+            size = "225,153"
+            zPosition = "2"
+            transparent = "1"
+            alphatest = "on"/>
+        <widget
+            source = "label5"
+            render = "Label"
+            position = "1448,237"
+            size = "225,36"
+            font = "Regular;33"
+            zPosition = "2"
+            transparent = "0"
+            noWrap = "1"
+            foregroundColor = "yellow"/>
+        <widget
+            name = "thumb5"
+            position = "1448,63"
+            size = "225,153"
+            zPosition = "2"
+            transparent = "1"
+            alphatest = "on"/>
+        <widget
+            source = "label6"
+            render = "Label"
+            position = "22,510"
+            size = "225,36"
+            font = "Regular;33"
+            zPosition = "2"
+            transparent = "0"
+            noWrap = "1"
+            foregroundColor = "yellow"/>
+        <widget
+            name = "thumb6"
+            position = "22,336"
+            size = "225,153"
+            zPosition = "2"
+            transparent = "1"
+            alphatest = "on"/>
+        <widget
+            source = "label7"
+            render = "Label"
+            position = "308,510"
+            size = "225,36"
+            font = "Regular;33"
+            zPosition = "2"
+            transparent = "0"
+            noWrap = "1"
+            foregroundColor = "yellow"/>
+        <widget
+            name = "thumb7"
+            position = "308,336"
+            size = "225,153"
+            zPosition = "2"
+            transparent = "1"
+            alphatest = "on"/>
+        <widget
+            source = "label8"
+            render = "Label"
+            position = "592,510"
+            size = "225,36"
+            font = "Regular;33"
+            zPosition = "2"
+            transparent = "0"
+            noWrap = "1"
+            foregroundColor = "yellow"/>
+        <widget
+            name = "thumb8"
+            position = "592,336"
+            size = "225,153"
+            zPosition = "2"
+            transparent = "1"
+            alphatest = "on"/>
+        <widget
+            source = "label9"
+            render = "Label"
+            position = "878,510"
+            size = "225,36"
+            font = "Regular;33"
+            zPosition = "2"
+            transparent = "0"
+            noWrap = "1"
+            foregroundColor = "yellow"/>
+        <widget
+            name = "thumb9"
+            position = "878,336"
+            size = "225,153"
+            zPosition = "2"
+            transparent = "1"
+            alphatest = "on"/>
+        <widget
+            source = "label10"
+            render = "Label"
+            position = "1162,510"
+            size = "225,36"
+            font = "Regular;33"
+            zPosition = "2"
+            transparent = "0"
+            noWrap = "1"
+            foregroundColor = "yellow"/>
+        <widget
+            name = "thumb10"
+            position = "1162,336"
+            size = "225,153"
+            zPosition = "2"
+            transparent = "1"
+            alphatest = "on"/>
+        <widget
+            source = "label11"
+            render = "Label"
+            position = "1448,510"
+            size = "225,36"
+            font = "Regular;33"
+            zPosition = "2"
+            transparent = "0"
+            noWrap = "1"
+            foregroundColor = "yellow"/>
+        <widget
+            name = "thumb11"
+            position = "1448,336"
+            size = "225,153"
+            zPosition = "2"
+            transparent = "1"
+            alphatest = "on"/>
+        <widget
+            source = "label12"
+            render = "Label"
+            position = "22,783"
+            size = "225,36"
+            font = "Regular;33"
+            zPosition = "2"
+            transparent = "0"
+            noWrap = "1"
+            foregroundColor = "yellow"/>
+        <widget
+            name = "thumb12"
+            position = "22,609"
+            size = "225,153"
+            zPosition = "2"
+            transparent = "1"
+            alphatest = "on"/>
+        <widget
+            source = "label13"
+            render = "Label"
+            position = "308,783"
+            size = "225,36"
+            font = "Regular;33"
+            zPosition = "2"
+            transparent = "0"
+            noWrap = "1"
+            foregroundColor = "yellow"/>
+        <widget
+            name = "thumb13"
+            position = "308,609"
+            size = "225,153"
+            zPosition = "2"
+            transparent = "1"
+            alphatest = "on"/>
+        <widget
+            source = "label14"
+            render = "Label"
+            position = "572,783"
+            size = "225,36"
+            font = "Regular;33"
+            zPosition = "2"
+            transparent = "0"
+            noWrap = "1"
+            foregroundColor = "yellow"/>
+        <widget
+            name = "thumb14"
+            position = "572,609"
+            size = "225,153"
+            zPosition = "2"
+            transparent = "1"
+            alphatest = "on"/>
+        <widget
+            source = "label15"
+            render = "Label"
+            position = "878,783"
+            size = "225,36"
+            font = "Regular;33"
+            zPosition = "2"
+            transparent = "0"
+            noWrap = "1"
+            foregroundColor = "yellow"/>
+        <widget
+            name = "thumb15"
+            position = "878,609"
+            size = "225,153"
+            zPosition = "2"
+            transparent = "1"
+            alphatest = "on"/>
+        <widget
+            source = "label16"
+            render = "Label"
+            position = "1116,783"
+            size = "225,36"
+            font = "Regular;33"
+            zPosition = "2"
+            transparent = "0"
+            noWrap = "1"
+            foregroundColor = "yellow"/>
+        <widget
+            name = "thumb16"
+            position = "1162,609"
+            size = "225,153"
+            zPosition = "2"
+            transparent = "1"
+            alphatest = "on"/>
+        <widget
+            source = "label17"
+            render = "Label"
+            position = "1448,783"
+            size = "225,36"
+            font = "Regular;33"
+            zPosition = "2"
+            transparent = "0"
+            noWrap = "1"
+            foregroundColor = "yellow"/>
+        <widget
+            name = "thumb17"
+            position = "1448,609"
+            size = "225,153"
+            zPosition = "2"
+            transparent = "1"
+            alphatest = "on"/>
+        <widget
+            name = "info"
+            position = "0,885"
+            zPosition = "2"
+            size = "1920,45"
+            font = "Regular;34"
+            foregroundColor = "#ffffff"
+            transparent = "0"
+            valign = "center"/>
+        <ePixmap
+            position = "122,996"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/tab_active.png"
+            size = "306,56"
+            zPosition = "2"
+            backgroundColor = "#ffffff"
+            alphatest = "blend"/>
+        <ePixmap
+            position = "428,996"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/tab_active.png"
+            size = "306,56"
+            zPosition = "2"
+            backgroundColor = "#ffffff"
+            alphatest = "blend"/>
+        <ePixmap
+            position = "734,996"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/tab_active.png"
+            size = "306,56"
+            zPosition = "2"
+            backgroundColor = "#ffffff"
+            alphatest = "blend"/>
+        <ePixmap
+            position = "1040,996"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/tab_active.png"
+            size = "306,56"
+            zPosition = "2"
+            backgroundColor = "#ffffff"
+            alphatest = "blend"/>
+        <ePixmap
+            position = "134,1006"
+            size = "38,38"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/red.png"
+            zPosition = "3"
+            transparent = "1"
+            alphatest = "blend"/>
+        <ePixmap
+            position = "440,1006"
+            size = "38,38"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/green.png"
+            zPosition = "3"
+            transparent = "1"
+            alphatest = "blend"/>
+        <ePixmap
+            position = "746,1006"
+            size = "38,38"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/yellow.png"
+            zPosition = "3"
+            transparent = "1"
+            alphatest = "blend"/>
+        <ePixmap
+            position = "1066,1006"
+            size = "38,38"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/blue.png"
+            zPosition = "3"
+            transparent = "1"
+            alphatest = "blend"/>
+        <ePixmap
+            position = "1335,996"
+            size = "65,50"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/micons/menu.png"
+            zPosition = "3"
+            transparent = "1"
+            alphatest = "blend"/>
+        <widget
+            name = "Key_red"
+            position = "136,1000"
+            zPosition = "4"
+            size = "210,36"
+            font = "torrentPlayerFont;27"
+            transparent = "1"
+            foregroundColor = "#ffffff"
+            backgroundColor = "#41000000"/>
+        <widget
+            name = "Key_green"
+            position = "450,1000"
+            zPosition = "4"
+            size = "218,36"
+            font = "torrentPlayerFont;27"
+            transparent = "1"
+            foregroundColor = "#ffffff"
+            backgroundColor = "#41000000"/>
+        <widget
+            name = "Key_yellow"
+            position = "728,1000"
+            zPosition = "4"
+            size = "270,36"
+            font = "torrentPlayerFont;27"
+            transparent = "1"
+            foregroundColor = "#ffffff"
+            backgroundColor = "#41000000"/>
+        <widget
+            name = "Key_blue"
+            position = "1050,1000"
+            zPosition = "4"
+            size = "270,36"
+            font = "torrentPlayerFont;27"
+            transparent = "1"
+            foregroundColor = "#ffffff"
+            backgroundColor = "#41000000"/>
+    </screen>
+    <screen
+        name="torrentPlayerinfoScreen"
+        title="torrentPlayer Info"
+        position="center,center"
+        size="1185,870"
+        flags="wfNoBorder">
+        <widget
+            name="text"
+            backgroundColor="#80000000"
+            transparent="1"
+            position="20,95"
+            size="1140,720"
+            halign="left"
+            font="torrentPlayerFont;33"
+            foregroundColor = "white"
+            zPosition="3" />
+        <widget
+            source="Title"
+            render="Label"
+            position="20,10"
+            foregroundColor="#84b8a"
+            size="1140,80"
+            font="Regular; 55"
+            backgroundColor="black"
+            zPosition="2"
+            transparent="1"
+            halign="center"
+            valign="center" />
+        <ePixmap
+            position = "center,center"
+            size="1185,870"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/images/TSInfos.png"
+            zPosition = "-1"
+            transparent = "0"
+            alphatest = "blend"/>
+    </screen>
+    
+    
+    <screen
+        name = "torrentPlayerm2b_setup"
+        position = "center,240"
+        size = "1125,240"
+        title = "m3u/xml bouquet converter">
+        <widget
+            position = "22,8"
+            size = "1080,150"
+            name = "config"
+            itemHeight = "35"
+            scrollbarMode = "showOnDemand"/>
+        <ePixmap
+            position = "60,210"
+            zPosition = "1"
+            size = "248,30"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/TSMplayer/red.png"
+            alphatest = "blend"/>
+        <widget
+            source = "key_red"
+            render = "Label"
+            position = "0,165"
+            zPosition = "2"
+            size = "248,45"
+            font = "Regular;30"
+            halign = "center"
+            valign = "center"
+            backgroundColor = "background"
+            foregroundColor = "foreground"
+            transparent = "1"/>
+        <ePixmap
+            position = "308,210"
+            zPosition = "1"
+            size = "248,30"
+            pixmap = "/usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer/interface/TSMplayer/green.png"
+            alphatest = "blend"/>
+        <widget
+            source = "key_green"
+            render = "Label"
+            position = "248,165"
+            zPosition = "2"
+            size = "248,45"
+            font = "Regular;30"
+            halign = "center"
+            valign = "center"
+            backgroundColor = "background"
+            foregroundColor = "foreground"
+            transparent = "1"/>
+    </screen>
+    
+</skin>

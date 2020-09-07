@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<addon
+id="eztv"
+ Version = "1.0.1"
+ name = "eztv"
+ provider-name = "TSmedia Team">
+<requires>
+<import addon="xbmc.python" version="2.1.0" optional="true" />
+
+<import addon="script.module.addon.common"/>"
+<import addon="script.module.tsresolver"/>"
+</requires>
+<extension point="xbmc.python.pluginsource"
+library="default.py">
+<provides>video</provides>
+</extension>
+<extension point="xbmc.addon.metadata">
+<summary> TV series torrents from https://eztv.io/ </summary>
+<description> https://eztv.io/ </description>
+<platform>all</platform>
+</extension>
+</addon>

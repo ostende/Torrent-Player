@@ -1,0 +1,21 @@
+﻿##params##
+plugin_title==RARBG
+plugin_id==rarbg
+section==movies
+version==1.0.2
+provider==TSmedia Team
+subsection==general
+group==movies
+rating==4
+textsize==20
+textcolor==#00ffe875
+infobar_forecolor+==#76addc
+infobar_color==#76addc
+style==list
+fanart==False
+mediatype==torrent
+downloadimage_by==thread
+autonext==False
+metadata==False
+subtitle==False
+player==auto

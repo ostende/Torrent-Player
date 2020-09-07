@@ -1,0 +1,14 @@
+<settings>
+	
+
+	<category label="transmission_login">
+		<setting id="host" type="text" label="Hoste" default="127.0.0.1" visible="true"/>
+		<setting id="port" type="text" label="Port" default="9091" visible="true"/>
+		<setting id="username" type="text" label="Username" default="root" visible="true"/>
+		<setting id="password" type="text" label="Password" default="enigma2" visible="true"/>
+             
+	</category>
+	
+	
+	
+</settings>
